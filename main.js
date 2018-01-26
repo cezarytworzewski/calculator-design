@@ -1,19 +1,24 @@
+class Calculator {
+  constructor() {
+    const $button = document.querySelector('.button');
+    const $display = document.getElementById('buttonDisplay');
+    this.$button = $button;
+    this.$display = $display;
+  }
 
+  result() {
+    this.$button,addEventListener('click', function() {
+      if
+    });
+  }
 
-var button = document.querySelectorAll('.button');
-var btnDisplay = document.getElementById("buttonDisplay");
+  plus() {
 
-for (var i = 0; i < button.length; i++) {
-    button[i].addEventListener('click', numberOutputDisplay);
+  }
+
 }
 
-function numberOutputDisplay() {
-    btnDisplay.value = btnDisplay.value + this.value;
-    
-    if (this.value === "C") {
-        btnDisplay.value = "0";
-    }
-   
-   
-    
-}
+window.addEventListener('load', function () {
+  const calculator = new Calculator();
+  calculator.result();
+});
