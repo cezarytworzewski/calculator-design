@@ -1,24 +1,30 @@
-class Calculator {
-  constructor() {
-    const $button = document.querySelector('.button');
-    const $display = document.getElementById('buttonDisplay');
-    this.$button = $button;
-    this.$display = $display;
-  }
+const btn = document.querySelectorAll('.button');
+const calcInput = document.getElementById('buttonDisplay');
 
-  result() {
-    this.$button,addEventListener('click', function() {
-      if
-    });
-  }
 
-  plus() {
 
-  }
-
+// funkcja pokazuje na ekranie liczby
+for (let i = 0; i < btn.length; i++) {
+  btn[i].addEventListener('click', insertValue);
 }
 
-window.addEventListener('load', function () {
-  const calculator = new Calculator();
-  calculator.result();
-});
+
+function insertValue() {
+  calcInput.value += this.value;
+
+  if (this.value === "C") {
+    calcInput.value = "0";
+  }
+  if (this.value === "=") {
+    licz();
+  }
+}
+
+function licz() {
+  console.log('aaa');
+}
+
+
+
+
+
