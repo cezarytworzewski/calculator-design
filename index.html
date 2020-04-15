@@ -1,38 +1,37 @@
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form name="calcform">
-        <input type="text" id="buttonDisplay" name="text1" placeholder="0"> </br>
-        <input type="button" class="button" name="btn7" value="7">
-        <input type="button" class="button" name="btn8" value="8">
-        <input type="button" class="button" name="btn9" value="9">
-        <input type="button" class="button" name="btn/" value="/"> </br>
+    <h1>JavaScript is funny</h1>
 
-        <input type="button" class="button" name="btn4" value="4">
-        <input type="button" class="button" name="btn5" value="5">
-        <input type="button" class="button" name="btn6" value="6">
-        <input type="button" class="button" name="btn*" value="*"> </br>
+    <div id="outputFirst">
+        <input type="number" id="numer1">
+        <input type="number" id="numer2">
+        <button onclick="policz()">Sprawdź</button>
+    </div>
 
-        <input type="button" class="button" name="btn1" value="1">
-        <input type="button" class="button" name="btn2" value="2">
-        <input type="button" class="button" name="btn3" value="3">
-        <input type="button" class="button" name="btn-" value="-"> </br>
+    <div id="outputSecond">
+        <input type="number" id="numer3">
+        <select name="operator" id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id="numer4">
+        <button onclick="policz2()">Sprawdź</button>
+    </div>
 
-        <input type="button" class="button" name="btn0" value="0">
-        <input type="button" class="button" name="btnPrzecinek" value=",">
-        <input type="button" class="button" name="btn+" value="+">
-        <input type="button" class="button" name="btn=" value="=">
-        <input type="reset" value="C">
-    </form>
 
-<script src="main.js"></script>
+    <!--<script src="main.js"></script>-->
+    <script src="main2.js"></script>
 </body>
 
 </html>
